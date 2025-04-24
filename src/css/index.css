@@ -1,0 +1,99 @@
+/* Reset some basic styles for consistency */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Set the root font size for the entire app */
+html {
+  font-size: 16px;
+}
+
+/* Body settings */
+body {
+  font-family: 'Arial', sans-serif;
+  background-image: url('/public/bg.png');
+  background-repeat: no-repeat;
+  background-size: cover; /* Optional: makes it cover the whole container */
+  background-position: center; /* Optional: centers the image */
+  color: #333; /* Default text color */
+  line-height: 1.5;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  flex-direction: column;
+}
+
+/* Add some margin to the body content */
+main {
+  width: 100%;
+  max-width: 1200px;
+  padding: 20px;
+}
+
+/* Provide a nice global link style */
+a {
+  text-decoration: none;
+  color: inherit;
+  transition: color 0.3s ease;
+}
+
+a:hover {
+  color: #5ab7d9; /* Light blue for hover */
+}
+
+/* Prevent background color of anchor from being selected */
+a:focus {
+  outline: none;
+}
+
+/* Provide a smooth transition for general elements */
+* {
+  transition: all 0.3s ease;
+}
+
+/* Root container for the application */
+#root {
+  width: 100%;
+  max-width: 1200px;
+  padding: 20px;
+  box-sizing: border-box;
+}
+
+/* Additional utility classes for spacing, padding, and margins */
+.mt-20 {
+  margin-top: 20px;
+}
+
+.mb-20 {
+  margin-bottom: 20px;
+}
+
+.pt-20 {
+  padding-top: 20px;
+}
+
+.pb-20 {
+  padding-bottom: 20px;
+}
+
+.text-center {
+  text-align: center;
+}
+
+/* Add a responsive design for mobile-first approach */
+@media (max-width: 768px) {
+  body {
+      padding: 10px;
+  }
+}
+
+@media (max-width: 480px) {
+  body {
+      padding: 5px;
+  }
+}
